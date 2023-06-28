@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        // window.onload = function(){
+
+        //     document.getElementById("header").style.color = "red";
+        //     var headers = document.getElementsByTagName("h1");
+        //     headers[0].style.color ="blue"
+        //     var head = document.getElementsByClassName("head")
+        //     // document.getElementsByClassName("head").style.border = "2px solid coral"
+        //     head[0].style.border = "2px solid coral"
+        //     var head_j = document.querySelector(".head")
+        //     head_j.style.backgroundColor="green"
+        // }
+        var remo = document.getElementById("remove");
+        document.body.removeChild(remo)
+        
+    </script>
+</head>
+<body>
+    <!-- <h1>header1</h1>
+    <h1>header2</h1>
+    <h1 id="header">header3</h1>
+    <h1 class="head">header4</h1> -->
+    <h1 id="remove">header</h1>
+    <h1 id="date"></h1>
+    <script>
+            var date = document.getElementById("date");
+        setInterval(function(){
+            date.innerHTML = new Date().toString();
+        },1000) 
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        function time(){
+            setTimeout("locateNav()",10000)
+        }//
+        function locateNav(){
+            location.replace("http://www.naver.com")
+        }
+        cnt = 10;
+        function countdown(){
+            if(cnt == 0){
+                locateNav();
+            }else{
+                document.getElementById("time").innerHTML = cnt + "초 후에 네이버로 이동합니다."
+                setTimeout('countdown()',1000);
+                cnt--;
+            }
+        }
+    </script>
+</head>
+<body onload="time()">
+    <div id="time"></div>
+    <script lang="java">
+        countdown()
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5; url=http://www.naver.com"> -->
+    <title>Document</title>
+    <script lang="java">
+        //방법1
+        // function nextWin(){
+        //     location = "http://www.naver.com"
+        // }
+        //방법2
+        // self.location.replace("http://www.naver.com")
+        // location = "http://www.naver.com"
+
+        setTimeout("history.go(0);",3000)
+    </script>
+</head>
+<!--방법3 <body onload="setTimeout('nextWin()',5000)"> -->
+<body>
+    <h1>5초후에 네이버로 이동하기</h1>
+</body>
+</html>

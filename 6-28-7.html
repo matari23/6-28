@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        // var audio = new Audio("imgs/summer-walk-152722.mp3");
+        var audio = new Audio();
+        audio.src = "summer-walk-152722.mp3"
+        audio.currentTime =2;
+        audio.volume=1;
+        function video_start(){
+            document.getElementById("video").play()
+        }
+    </script>
+</head>
+<body>
+    <button onclick="audio.play()">Play</button>
+    <button onclick="audio.pause()">Pause</button>
+    <video src="imgs/flowers.webm" id="video"></video>
+
+</body>
+</html>

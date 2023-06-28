@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        // var child = window.open("", "", "width=500,height=300");
+        // child.moveTo(0,0)//moveTo는 지정된 곳에서 absolute와 같은것 / moveby는 position reletive와 같은것 
+        // setInterval(function(){
+        //     child.moveBy(10,10)
+        // },1000)
+
+        // var output = "";
+        // for (var key in screen){
+        //     output += "*" + key + ":" + screen[key] +  "\n";
+        // }
+
+       // alert(output)
+
+        var child = window.open("","","width=300,height=200")
+        var width = screen.width;
+        var height = screen.height;
+
+        child.moveTo(0,0)
+        child.resizeTo(width,height)
+
+        setInterval(function(){
+            child.resizeTo(-20,-20);
+            child.moveBy(10,10);
+
+        },1000)
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
